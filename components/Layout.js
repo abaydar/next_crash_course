@@ -2,7 +2,7 @@ import Nav from './Nav'
 import Header from './Header'
 import styles from '../styles/Layout.module.css'
 
-export const Layout = ({children}) => {
+const Layout = ({children}) => {
   return (
     <>
         <Nav />
