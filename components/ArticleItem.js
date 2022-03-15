@@ -1,7 +1,7 @@
 import articleStyles from '../styles/Article.module.css'
 import Link from 'next/link'
 
-export const ArticleItem = ({ article }) => {
+const ArticleItem = ({ article }) => {
   return (
     <Link href="/article/[id]" as={`/article/${article.id}`}>
         <a className={articleStyles.card}>
@@ -15,3 +15,5 @@ export const ArticleItem = ({ article }) => {
     </Link>
   )
 }
+
+export default ArticleItem
